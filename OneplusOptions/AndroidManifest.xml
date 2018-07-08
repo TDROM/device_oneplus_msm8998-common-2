@@ -19,7 +19,7 @@
         android:theme="@android:style/Theme.DeviceDefault.Settings"
         android:supportsRtl="true" >
         <activity
-            android:name="com.oneplus.options.settings.OptionsPanelSettings"
+            android:name="com.oneplus.options.settings.OptionPanelSettings"
             android:exported="true"
             android:label="@string/device_extras" >
           <intent-filter>
@@ -40,40 +40,22 @@
             android:name=".settings.ScreenOffGestureSettings"
             android:label="@string/screen_off_gesture_title"
             android:theme="@android:style/Theme.DeviceDefault.Settings">
-        <intent-filter>
+          <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-        </intent-filter>
-                  <intent-filter>
-                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
           </intent-filter>
-          <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_gestures" />
-          <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.homepage" />
         </activity>
 
         <activity
             android:name=".settings.SliderSettings"
             android:theme="@android:style/Theme.DeviceDefault.Settings"
             android:label="@string/notification_slider">
-        <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-        </intent-filter>
-        <intent-filter>
-                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
-        </intent-filter>
-          <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_gestures" />
-          <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.homepage" />
+            </intent-filter>
         </activity>
 
         <receiver android:name=".BootReceiver" >
-         <intent-filter>
+          <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
           </intent-filter>
         </receiver>

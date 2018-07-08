@@ -26,7 +26,6 @@ import android.provider.Settings;
 import android.text.TextUtils;
 
 import com.oneplus.options.settings.DCIModeSwitch;
-import com.oneplus.options.settings.HBMModeSwitch;
 import com.oneplus.options.settings.SRGBModeSwitch;
 import com.oneplus.options.settings.TapToWakeSwitch;
 import com.oneplus.options.settings.VibratorStrengthPreference ;
@@ -60,11 +59,6 @@ public class Startup extends BroadcastReceiver {
 
         enabled = sharedPrefs.getBoolean(OptionPanelSettings.KEY_TAPTOWAKE_SWITCH, false);
         restore(TapToWakeSwitch.getFile(), enabled);
-
-        enabled = sharedPrefs.getBoolean(OptionPanelSettings.KEY_HBM_SWITCH, false);
-        if (enabled) {
-            restore(HBMModeSwitch.getFile(), "2");
-        }
 
         enabled = sharedPrefs.getBoolean(OptionPanelSettings.KEY_DCI_SWITCH, false);
         restore(DCIModeSwitch.getFile(), enabled);

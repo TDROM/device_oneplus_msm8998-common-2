@@ -68,7 +68,6 @@
     <string name="srgb_mode_summary"></string>
     <string name="srgb_mode_title">sRGB mode</string>
     <string name="hbm_mode_summary"></string>
-    <string name="hbm_mode_title">High brightness mode</string>
     <string name="dci_mode_summary"></string>
     <string name="dci_mode_title">Wide color gamut mode</string>
     <string name="display_category">Display</string>

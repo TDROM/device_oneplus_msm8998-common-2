@@ -47,7 +47,6 @@ public class OptionPanelSettings extends NodePreferenceActivity {
     public static final String KEY_TAPTOWAKE_SWITCH = "taptowake";
 
     public static final String KEY_SRGB_SWITCH = "srgb";
-    public static final String KEY_HBM_SWITCH = "hbm";
     public static final String KEY_DCI_SWITCH = "dci";
 
     private VibratorStrengthPreference mVibratorStrength;
@@ -71,9 +70,6 @@ public class OptionPanelSettings extends NodePreferenceActivity {
 
         mSRGBModeSwitch = (TwoStatePreference) findPreference(KEY_SRGB_SWITCH);
         mSRGBModeSwitch.setOnPreferenceChangeListener(new SRGBModeSwitch());
-
-        mHBMModeSwitch = (TwoStatePreference) findPreference(KEY_HBM_SWITCH);
-        mHBMModeSwitch.setOnPreferenceChangeListener(new HBMModeSwitch());
 
         mDCIModeSwitch = (TwoStatePreference) findPreference(KEY_DCI_SWITCH);
         boolean isPanelSupported = DCIModeSwitch.isSupportedPanel();
