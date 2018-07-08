@@ -210,7 +210,7 @@ PRODUCT_PACKAGES += \
 
 # Device Parts
 PRODUCT_PACKAGES += \
-    OneplusShit    
+    OneplusOptions
 
 # DRM
 PRODUCT_PACKAGES += \

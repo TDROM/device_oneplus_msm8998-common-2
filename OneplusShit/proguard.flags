@@ -1,5 +1,0 @@
--keep public class com.oneplus.shit.KeyHandler
-
--keepclassmembers public class com.oneplus.shit.KeyHandler {
-    *;
-}
